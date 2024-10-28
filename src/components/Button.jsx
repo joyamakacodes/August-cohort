@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react"
-const Button= ({name})=>{
+const Button= ({children})=>{
   const [count, setCount]= useState(0)
 
   const handleClick=()=>{
@@ -9,7 +9,7 @@ const Button= ({name})=>{
   }
   return(
 <>
-<button style={{color: 'white', background: 'green'}}>{name} {count}
+<button style={{color: 'white', background: 'green'}}>{children} {count}
 </button>
  <button onClick={handleClick}>Click Me</button>
 

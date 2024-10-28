@@ -1,11 +1,14 @@
-import Navbar from "../components/Navbar";
+import Layout from "./Layout";
+import Cards from "../components/Cards";
 const Services=()=>{
   return(
     <>
-    <Navbar />
+    <Layout>
     <div>
       This is Service Page
+      <Cards/>
     </div>
+    </Layout>
     </>
   )
 }

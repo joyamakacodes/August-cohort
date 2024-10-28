@@ -1,0 +1,6 @@
+.uiButton{
+  background: purple;
+}
+.uiButton:hover{
+  background: rgb(236, 208, 236);
+}

@@ -1,10 +1,13 @@
 import { CarouselData } from "../data/CarouselData";
 import { Link } from "react-router-dom";
 import './cards.css'
+import { UseCounting } from "../context/countContext";
 
 const Cards = () => {
+  const{count}= UseCounting()
   return (
     <div className="container hover:bg-white">
+    <p>{count}</p>
       <div className="grid md:grid-cols-3 grid-cols-1 w-full gap-4 " >
       {CarouselData.map(({id,image, title, desc})=>(
         <div key={id} style={{border: '2px solid gray', padding: '10px'}}>

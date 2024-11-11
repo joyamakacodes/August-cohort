@@ -13,6 +13,7 @@ import ContextTest from "./components/ContextTest";
 import ContextShow from "./pages/ContextShow";
 import Fetch from "./components/Fetch";
 import FetchPost from "./components/FetchPost";
+import CountSuscribe from "./components/CountSuscribe";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="/test" element={<RoutingTest/>}/>
           <Route path="/fetch" element={<Fetch/>}/>
           <Route path="/fetchpost" element={<FetchPost/>}/>
+          <Route path="/count" element={<CountSuscribe/>}/>
 
         </Routes>
       </Router>

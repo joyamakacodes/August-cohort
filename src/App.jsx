@@ -14,6 +14,7 @@ import ContextShow from "./pages/ContextShow";
 import Fetch from "./components/Fetch";
 import FetchPost from "./components/FetchPost";
 import CountSuscribe from "./components/CountSuscribe";
+import TodoSubscribe from "./components/TodoSubscribe";
 
 function App() {
   return (
@@ -36,6 +37,8 @@ function App() {
           <Route path="/fetch" element={<Fetch/>}/>
           <Route path="/fetchpost" element={<FetchPost/>}/>
           <Route path="/count" element={<CountSuscribe/>}/>
+          <Route path="/todo" element={<TodoSubscribe/>}/>
+
 
         </Routes>
       </Router>

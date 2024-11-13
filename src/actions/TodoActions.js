@@ -1,9 +1,9 @@
-export const Addtodo= (todo)=>({
+export const addtodo= (todo)=>({
 type: 'ADDTODO',
 payload: todo
 })
 
-export const RemoveTodo= (index)=>(
+export const removetodo= (index)=>(
     {
         type: 'REMOVETODO',
         payload: index

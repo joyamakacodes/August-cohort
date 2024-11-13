@@ -1,4 +1,3 @@
-import { createStore } from "redux";
 
 const InitialState= {
     count: 0
@@ -30,6 +29,5 @@ switch(action.type){
 }
 
 
-const store = createStore(CountReducer)
-export default store;
+
 

@@ -15,7 +15,7 @@ function CountSuscribe({count, Increase, decrease, reset}) {
   );
 }
 const mapStateToProps=state=>({
-  count: state.count
+  count: state.counts.count
 })
 
 const mapDispatchToProps = {

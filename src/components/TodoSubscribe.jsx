@@ -22,9 +22,9 @@ const handleSubmit=()=>{
       <input type="text" value={input} onChange={((e)=>setInput(e.target.value))} className='border border-green-500'/>
       <button onClick={handleAddTodo}>add to do</button>
       <ul>
-        {lists.map((todo, index)=>(
+        {lists.map((list, index)=>(
           <li key={index}>
-            <p>{todo}</p>
+            <p>{list}</p>
             <button onClick={(()=>removetodo(index))}>remove</button>
           </li>
         ))}
@@ -36,7 +36,7 @@ const handleSubmit=()=>{
 
 const mapStateToProps = (state)=>{
   return{
-    lists: state.Todo
+    lists: state.todos.Todo
   }
 }
 
